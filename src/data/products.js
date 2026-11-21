@@ -1,15 +1,8 @@
 
-export interface Product {
-  id: string;
-  name: string;
-  description: string;
-  gangs?: string;
-  colors?: string[];
-  image?: string;
-  imagePlaceholderText: string;
-}
+/** @typedef {{ id: string, name: string, description: string, gangs?: string, colors?: string[], image?: string, imagePlaceholderText: string }} Product */
 
-export const smartSwitchesData: Product[] = [
+/** @type {Product[]} */
+export const smartSwitchesData = [
   {
     id: "2-switch",
     name: "2-Switch Smart Module",
