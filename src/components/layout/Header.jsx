@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown, MessageCircle } from "lucide-react";
 import MobileNav from "./MobileNav";
+import Favicon from "../../app/favicon.ico";
+import Image from "next/image";
 
 const services = [
   { name: "Home Automation", href: "/services/home-automation" },
@@ -24,12 +26,7 @@ export default function Header() {
         
         {/* Logo Placeholder */}
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-black text-brand-navy tracking-tighter">
-            Tone<span className="text-brand-blue">Up</span>
-          </span>
-          <span className="text-xs font-semibold tracking-widest text-gray-500 uppercase mt-1 hidden sm:block">
-            Solutions
-          </span>
+          <Image src={Favicon} alt="ToneUp Solutions" width={40} height={40} />
         </Link>
 
         {/* Desktop Navigation */}
