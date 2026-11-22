@@ -2,7 +2,7 @@ import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 
 export default function CTASection({
-  title = "Let's Build Something Better Together",
+  title = "Let's Build Something Special",
   description = "Whether you're looking to make your home smarter, establish your business online or transform your space, get in touch with ToneUp Solutions to discuss your requirements.",
 }) {
   return (

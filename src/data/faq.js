@@ -5,7 +5,7 @@ export const homeAutomationFaqs = [
   },
   {
     question: "Can I control the switch manually?",
-    answer: "Yes, absolutely. Even when smart features are not being used or if the internet is down, you can always use the physical buttons on the switch just like a normal switch.",
+    answer: "Yes, absolutely just by touch. Even when smart features are not being used or if the internet is down, you can always use the physical buttons on the switch just like a normal switch or use IR Remote.",
   },
   {
     question: "Can I control my smart switch using a remote?",
@@ -13,7 +13,10 @@ export const homeAutomationFaqs = [
   },
   {
     question: "How far does the IR remote work?",
-    answer: "The approximate IR remote operating distance is up to 22 feet. However, this is subject to environmental conditions, obstacles in the room, and specific product specifications.",
+    answer: "The approximate IR remote operating distance is up to 22 feet. However, this is subject to no obstacles in the room in between remote and switch.",
+  },{
+    question: "Can I automate my smart switch to turn on/off at specific times?",
+    answer: "Yes, you can set schedules and timers for your smart switches using the mobile application. This allows you to automate your appliances to turn on or off at specific times, enhancing convenience and energy efficiency.",
   },
   {
     question: "Can I control my switches when I am away from home?",
@@ -25,7 +28,7 @@ export const homeAutomationFaqs = [
   },
   {
     question: "Do smart switches require Wi-Fi?",
-    answer: "Yes, to use features like remote control and voice assistants, the smart switch needs to be connected to your home's Wi-Fi network.",
+    answer: "Yes, to use features like voice assistants and mobile app control, the smart switch needs to be connected to your home's Wi-Fi network.",
   },
   {
     question: "Can smart switches be installed in existing homes?",
@@ -33,10 +36,10 @@ export const homeAutomationFaqs = [
   },
   {
     question: "Do you provide installation in Hyderabad?",
-    answer: "Yes, ToneUp Solutions provides product supply, installation, and demonstration services in Hyderabad, subject to product availability and specific project requirements.",
+    answer: "Yes, ToneUp Solutions provides product demo, budgeting, supply and installation services completely as per your requirements in Hyderabad .",
   },
   {
     question: "How can I enquire about pricing?",
-    answer: "You can click any of the 'Enquire Now' buttons on this page to reach us via WhatsApp, or visit our Contact page to fill out an enquiry form. We will get back to you with pricing and availability details.",
+    answer: "You can click any of the 'Enquire Now' buttons on this page to reach us via WhatsApp, or visit our Contact page to fill out an enquiry form or call us directly at +91 8978147676 / 8978147066. We will get back to you with pricing .",
   },
 ];

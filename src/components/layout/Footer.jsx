@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { MessageCircle, Mail, MapPin } from "lucide-react";
+import { MessageCircle, Mail, MapPin, Phone } from "lucide-react";
+import Logo from "../../../public/assests/Logo.jpeg";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,13 +11,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           
           {/* Brand & Description */}
-          <div className="col-span-1 lg:col-span-1">
+          {/* <div className="col-span-1 lg:col-span-1"><Link href="/" className="text-5xl font-black text-white tracking-tighter mb-4 inline-block">T</Link>
             <Link href="/" className="text-3xl font-black text-white tracking-tighter mb-4 inline-block">
-              Tone<span className="text-brand-cyan">Up</span>
+              ONE<span className="text-brand-cyan"><Link href="/" className="text-5xl font-black text-white tracking-tighter mb-4 inline-block">U</Link>P</span>
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed mt-4">
               Smart Solutions. Better Spaces. Stronger Businesses. Bringing technology, creativity, and practical expertise together under one roof in Hyderabad.
             </p>
+          </div> */}
+          <div className="col-span-1 lg:col-span-1">
+            <Link href="/" className="inline-block mb-4">
+              <img src={Logo.src} alt="ToneUp Solutions Logo" className="w-32 h-auto" />
+            </Link>
+            
           </div>
 
           {/* Quick Links */}
@@ -38,7 +45,7 @@ export default function Footer() {
               <li><Link href="/services/digital-marketing" className="hover:text-brand-cyan transition-colors">Digital Marketing</Link></li>
               <li><Link href="/services/video-editing" className="hover:text-brand-cyan transition-colors">Video Editing</Link></li>
               <li><Link href="/services/interior-works" className="hover:text-brand-cyan transition-colors">Interior Works</Link></li>
-              <li><Link href="/services/renovations" className="hover:text-brand-cyan transition-colors">Renovations</Link></li>
+              <li><Link href="/services/renovations" className="hover:text-brand-cyan transition-colors">Renovation/Remodelling Works</Link></li>
             </ul>
           </div>
 
@@ -57,6 +64,15 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <MessageCircle size={18} className="text-brand-cyan shrink-0" />
                 <a href="https://wa.me/8978147676?text=Hello%20ToneUp%20Solutions%2C%20I%20would%20like%20to%20discuss%20my%20requirements." target="_blank" rel="noopener noreferrer" className="hover:text-brand-cyan transition-colors">Chat on WhatsApp</a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone size={18} className="text-brand-cyan shrink-0" />
+                <a href="tel:+918978147676" className="hover:text-brand-cyan transition-colors">+91 8978147676</a><br/>
+                
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone size={18} className="text-brand-cyan shrink-0" />
+                <a href="tel:+918978147066" className="hover:text-brand-cyan transition-colors">+91 8978147066</a>
               </li>
             </ul>
           </div>

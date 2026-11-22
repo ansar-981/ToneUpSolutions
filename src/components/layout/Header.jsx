@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown, MessageCircle } from "lucide-react";
 import MobileNav from "./MobileNav";
-import Favicon from "../../app/favicon.ico";
+import Logo from "../../../public/assests/Logo.jpeg";
 import Image from "next/image";
 
 const services = [
@@ -26,7 +26,7 @@ export default function Header() {
         
         {/* Logo Placeholder */}
         <Link href="/" className="flex items-center gap-2">
-          <Image src={Favicon} alt="ToneUp Solutions" width={40} height={40} />
+          <Image src={Logo} alt="ToneUp Solutions" width={125} height={125} />
         </Link>
 
         {/* Desktop Navigation */}

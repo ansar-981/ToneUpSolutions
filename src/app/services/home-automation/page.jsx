@@ -21,6 +21,8 @@ import FAQSection from "../../../components/services/FAQSection";
 import ProductGallery from "../../../components/services/ProductGallery";
 import CTASection from "../../../components/common/CTASection";
 import { getWhatsAppLink } from "../../../lib/whatsapp";
+import ScrollReveal from "../../../components/common/ScrollReveal";
+
 
 export const metadata = {
     title: "Home Automation & Smart Switches in Hyderabad | ToneUp Solutions",
@@ -30,6 +32,7 @@ export const metadata = {
 export default function HomeAutomationPage() {
     return (
         <>
+        
             {/* Section 1: Hero */}
             <section className="bg-brand-navy pt-20 pb-24 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/2 h-full bg-brand-blue/10 -skew-x-12 transform origin-top-right"></div>
@@ -63,6 +66,19 @@ export default function HomeAutomationPage() {
                         </div>
                     </div>
                 </div>
+            </section>
+            <section className="bg-brand-navy py-12">
+                <div className="w-full max-w-md mx-auto aspect-[9/16] overflow-hidden rounded-xl">
+
+                <iframe
+        src="https://www.youtube.com/embed/a1YNfA8Xh8c"
+        title="YouTube Short"
+        className="w-full h-full"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      /></div>
+
+                
             </section>
 
             {/* Section 2: What is Home Automation? */}
@@ -99,7 +115,7 @@ export default function HomeAutomationPage() {
                 </div>
             </section>
 
-            {/* Section 3: Smart Switches */}
+            {/* Section 3: Smart Switches
             <section className="py-20 bg-brand-light">
                 <div className="container mx-auto px-4 md:px-8">
                     <div className="text-center mb-16">
@@ -121,7 +137,7 @@ export default function HomeAutomationPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Section 4: Ways to Control */}
             <section className="py-20 bg-white">
@@ -208,7 +224,7 @@ export default function HomeAutomationPage() {
 
             {/* Section 5: How It Works */}
             <section className="py-20 bg-brand-navy text-white">
-                <div className="container mx-auto px-4 md:px-8">
+                <div className="container mx-auto px-6 md:px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                             How It Works
@@ -318,7 +334,7 @@ export default function HomeAutomationPage() {
                             </h2>
 
                             <p className="text-gray-300 mb-10 max-w-3xl mx-auto text-lg">
-                                ToneUp Solutions offers smart home automation products, with product demonstrations, supply and installation services in Hyderabad, subject to product availability and project requirements.
+                                ToneUp Solutions offers smart home automation products, with product demo, physical experience, budgeting, supply and installation services in Hyderabad
                             </p>
 
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -341,12 +357,12 @@ export default function HomeAutomationPage() {
                                 </a>
 
                                 <a
-                                    href={getWhatsAppLink("Hello ToneUp Solutions, I would like to request a product demonstration.")}
+                                    href={getWhatsAppLink("Hello ToneUp Solutions, I would like to request a product demo.")}
                                     target="_blank"
                                     rel="noreferrer"
                                     className="bg-transparent border border-white/30 hover:bg-white/10 text-white px-6 py-3 rounded-md font-semibold transition-colors"
                                 >
-                                    Demonstration Enquiry
+                                    Demo Enquiry
                                 </a>
                             </div>
                         </div>

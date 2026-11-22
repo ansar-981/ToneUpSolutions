@@ -11,7 +11,7 @@ export const servicesData = [
   },
   {
     id: "web-development",
-    title: "Web Development & Design",
+    title: "Web Design & Development",
     description: "Build a professional online presence with modern, responsive and business-focused websites designed around your brand and goals.",
     icon: Globe,
     href: "/services/web-development",
@@ -36,14 +36,14 @@ export const servicesData = [
   {
     id: "interior-works",
     title: "Interior Works",
-    description: "Improve your interiors with practical solutions for cupboards, flooring, interior finishing, installations and custom space improvements.",
+    description: "Improve your interiors with practical ideas for complete solutions including cupboards, flooring, interior finishing, installations and custom space improvements.",
     icon: Sofa,
     href: "/services/interior-works",
     comingSoon: true,
   },
   {
     id: "renovations",
-    title: "Home, Office & Retail Renovations",
+    title: "Home, Office & Retail Area Renovation Works",
     description: "Upgrade and transform residential, commercial, office and retail spaces with renovation and improvement solutions.",
     icon: Hammer,
     href: "/services/renovations",

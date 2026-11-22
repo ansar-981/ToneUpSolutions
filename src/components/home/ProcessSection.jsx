@@ -17,13 +17,13 @@ export default function ProcessSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="relative">
-              <div className="text-5xl font-black text-white/10 mb-4">{step.number}</div>
+              <div className="text-5xl font-black text-white/20 mb-4">{step.number}</div>
               <h3 className="text-xl font-bold text-brand-cyan mb-3">{step.title}</h3>
               <p className="text-gray-400 text-sm leading-relaxed">{step.desc}</p>
               
               {/* Connector Line (Desktop only) */}
               {index !== steps.length - 1 && (
-                <div className="hidden lg:block absolute top-8 right-0 w-full h-[1px] bg-white/10 translate-x-1/2"></div>
+                <div className="hidden lg:block absolute top-8 right-0 w-full h-[1px] bg-white/ translate-x-1/2"></div>
               )}
             </div>
           ))}

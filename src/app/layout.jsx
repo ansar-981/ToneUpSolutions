@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import ScrollReveal from "../components/common/ScrollReveal";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -46,9 +47,11 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${inter.variable} scroll-smooth`}>
       <body className="flex flex-col min-h-screen antialiased">
         <Header />
-        <main className="flex-grow">
-          {children}
-        </main>
+        
+          <main className="flex-grow">
+            {children}
+          </main>
+        
         <Footer />
       </body>
     </html>
