@@ -3,6 +3,9 @@ import "./globals.css";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import ScrollReveal from "../components/common/ScrollReveal";
+import localFont from "next/font/local";
+// import platina from "../../public/assests/fonts/Platina-Linotype.ttf";
+
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -41,11 +44,17 @@ export const viewport = {
   width: "device-width",
   initialScale: 1,
 };
+const platina = localFont({
+  src: "../../public/assests/fonts/Platina-Linotype.ttf",
+  variable: "--font-platina",
+  display: "swap",
+});
+
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth`}>
-      <body className="flex flex-col min-h-screen antialiased">
+      <body className={`flex flex-col min-h-screen antialiased ${platina.variable}`}>
         <Header />
         
           <main className="flex-grow">

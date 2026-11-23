@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { servicesData } from "../../data/services";
 import CTASection from "../../components/common/CTASection";
+import 'primeicons/primeicons.css';
 
 export const metadata = {
   title: "About Us | ToneUp Solutions",

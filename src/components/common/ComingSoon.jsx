@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, Clock, MessageCircle, Mail, Image as ImageIcon } from "lucide-react";
 import { getWhatsAppLink } from "../../lib/whatsapp";
+import 'primeicons/primeicons.css';
 
 export default function ComingSoon({ serviceName, shortDescription, futureDescription }) {
   return (
@@ -54,9 +55,9 @@ export default function ComingSoon({ serviceName, shortDescription, futureDescri
                     href={getWhatsAppLink(`Hello ToneUp Solutions, I would like to enquire about ${serviceName}.`)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 bg-brand-blue hover:bg-blue-700 text-white px-4 py-3 rounded-md font-semibold transition-colors flex items-center justify-center gap-2"
+                    className="flex-1 bg-[#24CC63] hover:bg-[#1da851] text-white px-4 py-3 rounded-md font-semibold transition-colors flex items-center justify-center gap-2"
                   >
-                    <MessageCircle size={18} />
+                    <i className="pi pi-whatsapp" style={{ fontSize: '1.5rem' }}></i>
                     WhatsApp Us
                   </a>
                   <Link

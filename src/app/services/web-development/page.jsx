@@ -8,7 +8,7 @@ export const metadata = {
 export default function WebDevelopmentPage() {
   return (
     <ComingSoon
-      serviceName="Web Development & Design"
+      serviceName="Web Design & Development"
       shortDescription="Professional websites designed and developed to help businesses, organisations and individuals establish a strong online presence."
       futureDescription="We are building a dedicated team to create modern, responsive, and business-focused websites tailored around your brand and goals. Stay tuned!"
     />

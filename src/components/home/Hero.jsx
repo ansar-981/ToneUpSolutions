@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, MessageCircle } from "lucide-react";
 import HeroImage from "../../../public/assests/HeroImage.png";
+import 'primeicons/primeicons.css';
 
 export default function Hero() {
   return (
@@ -72,9 +73,10 @@ export default function Hero() {
                 href="https://wa.me/918978147676?text=Hello%20ToneUp%20Solutions%2C%20I%20would%20like%20to%20discuss%20my%20requirements."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-sm px-8 py-4 rounded-md font-semibold transition-all shadow-sm flex items-center justify-center gap-2"
+                className="bg-white/10 hover:bg-white/20 text-[#24CC63] border border-white/30 backdrop-blur-sm px-8 py-4 rounded-md font-semibold transition-all shadow-sm flex items-center justify-center gap-2"
               >
-                <MessageCircle size={20} className="text-green-400" />
+                <i className="pi pi-whatsapp" style={{ fontSize: '1.5rem' }}></i>
+
                 WhatsApp Us
               </a>
 

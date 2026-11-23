@@ -27,9 +27,9 @@ export default function CTASection({
             href="https://wa.me/8978147676?text=Hello%20ToneUp%20Solutions%2C%20I%20would%20like%20to%20discuss%20my%20requirements."
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-md font-semibold transition-all flex items-center justify-center gap-2 backdrop-blur-sm"
+            className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-[#24CC63] border border-white/20 px-8 py-4 rounded-md font-semibold transition-all flex items-center justify-center gap-2 backdrop-blur-sm"
           >
-            <MessageCircle size={20} />
+            <i className="pi pi-whatsapp" style={{ fontSize: '1.5rem' }}></i>
             Chat on WhatsApp
           </a>
         </div>

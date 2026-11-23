@@ -52,7 +52,7 @@ export default function HomeAutomationPage() {
                                 href={getWhatsAppLink("Hello ToneUp Solutions, I am interested in Home Automation products.")}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-brand-cyan hover:bg-[#008be6] text-white px-8 py-4 rounded-md font-semibold transition-all text-center"
+                                className="bg-[#24CC63] hover:bg-[#008be6] text-white px-8 py-4 rounded-md font-semibold transition-all text-center"
                             >
                                 Enquire on WhatsApp
                             </a>
@@ -222,50 +222,43 @@ export default function HomeAutomationPage() {
                 </div>
             </section>
 
-            {/* Section 5: How It Works */}
-            <section className="py-20 bg-brand-navy text-white">
-                <div className="container mx-auto px-6 md:px-6">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                            How It Works
-                        </h2>
+{/* Section 5: How It Works */}
+<section className="py-20 bg-brand-navy text-white">
+    <div className="container mx-auto px-4 md:px-8">
+        <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                How It Works
+            </h2>
 
-                        <p className="text-gray-300">
-                            Installation and setup depend on the specific switch model and electrical configuration.
-                        </p>
+            <p className="text-gray-300">
+                Installation and setup depend on the specific switch model and electrical configuration.
+            </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+            {[
+                "Smart Switch Installation",
+                "Connect to Network",
+                "Configure Mobile App",
+                "Connect Voice Assistants",
+                "Start Using Controls"
+            ].map((step, index) => (
+                <div
+                    key={index}
+                    className="flex flex-col items-center text-center gap-4"
+                >
+                    <div className="bg-white/10 border border-white/20 rounded-full w-12 h-12 flex items-center justify-center font-bold text-brand-cyan shrink-0">
+                        {index + 1}
                     </div>
 
-                    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-0 max-w-5xl mx-auto">
-                        {[
-                            "Smart Switch Installation",
-                            "Connect to Network",
-                            "Configure Mobile App",
-                            "Connect Voice Assistants",
-                            "Start Using Controls"
-                        ].map((step, index) => (
-                            <div
-                                key={index}
-                                className="flex items-center w-full md:w-auto"
-                            >
-                                <div className="bg-white/10 border border-white/20 rounded-full w-10 h-10 flex items-center justify-center font-bold text-brand-cyan shrink-0">
-                                    {index + 1}
-                                </div>
-
-                                <div className="ml-4 md:ml-2 md:mr-6 text-sm font-medium whitespace-nowrap">
-                                    {step}
-                                </div>
-
-                                {index !== 4 && (
-                                    <ArrowRight
-                                        className="hidden md:block text-white/30 mx-2 shrink-0"
-                                        size={20}
-                                    />
-                                )}
-                            </div>
-                        ))}
+                    <div className="text-sm md:text-base font-medium leading-relaxed text-white">
+                        {step}
                     </div>
                 </div>
-            </section>
+            ))}
+        </div>
+    </div>
+</section>
 
             {/* Section 6: Applications */}
             <section className="py-20 bg-white">

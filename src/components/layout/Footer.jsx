@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { MessageCircle, Mail, MapPin, Phone } from "lucide-react";
+// import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Logo from "../../../public/assests/Logo.jpeg";
+import 'primeicons/primeicons.css';
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,7 +12,7 @@ export default function Footer() {
     <footer className="bg-brand-navy text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          
+
           {/* Brand & Description */}
           {/* <div className="col-span-1 lg:col-span-1"><Link href="/" className="text-5xl font-black text-white tracking-tighter mb-4 inline-block">T</Link>
             <Link href="/" className="text-3xl font-black text-white tracking-tighter mb-4 inline-block">
@@ -23,7 +26,7 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-4">
               <img src={Logo.src} alt="ToneUp Solutions Logo" className="w-32 h-auto" />
             </Link>
-            
+
           </div>
 
           {/* Quick Links */}
@@ -63,18 +66,61 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <MessageCircle size={18} className="text-brand-cyan shrink-0" />
-                <a href="https://wa.me/8978147676?text=Hello%20ToneUp%20Solutions%2C%20I%20would%20like%20to%20discuss%20my%20requirements." target="_blank" rel="noopener noreferrer" className="hover:text-brand-cyan transition-colors">Chat on WhatsApp</a>
+                <a href="https://wa.me/918978147676?text=Hello%20ToneUp%20Solutions%2C%20I%20would%20like%20to%20discuss%20my%20requirements." target="_blank" rel="noopener noreferrer" className="hover:text-brand-cyan transition-colors">Chat on WhatsApp</a>
+              </li>
+              <li className="flex items-center gap-3">
+                <MessageCircle size={18} className="text-brand-cyan shrink-0" />
+                <a href="https://wa.me/918978147066?text=Hello%20ToneUp%20Solutions%2C%20I%20would%20like%20to%20discuss%20my%20requirements." target="_blank" rel="noopener noreferrer" className="hover:text-brand-cyan transition-colors">Chat on WhatsApp</a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-brand-cyan shrink-0" />
-                <a href="tel:+918978147676" className="hover:text-brand-cyan transition-colors">+91 8978147676</a><br/>
-                
+                <a href="tel:+918978147676" className="hover:text-brand-cyan transition-colors">+91 8978147676</a><br />
+
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-brand-cyan shrink-0" />
                 <a href="tel:+918978147066" className="hover:text-brand-cyan transition-colors">+91 8978147066</a>
               </li>
             </ul>
+          </div>
+        </div>
+        {/* Social Media Links */}
+        <div className="mt-8 mb-8 flex flex-col items-center gap-4">
+          <h4 className="text-lg font-semibold text-white">Follow Us</h4>
+
+          <div className="flex items-center gap-6">
+            {/* Facebook */}
+            <a
+              href="https://www.facebook.com/profile.php?id=61596603033940#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow ToneUp Solutions on Facebook"
+              className="text-gray-400 hover:text-brand-cyan transition-colors text-xl"
+            >
+              <i className="pi pi-facebook"></i>
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/toneupsolutions"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow ToneUp Solutions on Instagram"
+              className="text-gray-400 hover:text-brand-cyan transition-colors text-xl"
+            >
+              <i className="pi pi-instagram"></i>
+            </a>
+
+            {/* YouTube */}
+            <a
+              href="https://www.youtube.com/@toneupsolutions"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Subscribe to ToneUp Solutions on YouTube"
+              className="text-gray-400 hover:text-brand-cyan transition-colors text-xl"
+            >
+              <i className="pi pi-youtube"></i>
+            </a>
           </div>
         </div>
 

@@ -7,6 +7,7 @@ import MobileNav from "./MobileNav";
 import Logo from "../../../public/assests/Logo.jpeg";
 import Image from "next/image";
 
+
 const services = [
   { name: "Home Automation", href: "/services/home-automation" },
   { name: "Web Development", href: "/services/web-development" },
